@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "p p p"
+    "s y 2"
+    "s y 2";
+}
+
+.twoguys{
+    background-color: aqua;
+    grid-area: 2;
+    object-fit: contain;
+}
+.services{
+    background-color:bisque;
+    grid-area: s;
+}
+
+.yapp{
+    background-color:brown;
+    grid-area: y;
+}
+
+.picture{
+    background-color: coral;
+    grid-area: p;
+}
