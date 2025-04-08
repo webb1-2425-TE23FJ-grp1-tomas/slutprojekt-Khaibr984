@@ -2,12 +2,29 @@
   box-sizing: border-box;
 }
 
+body{
+ 
+  display: flex;
+  justify-content: center;
+  background-color:azure ;
+}
+
+.box{
+  max-width: 1200px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "men"
+  "con ";
+}
+
 .container {
+  grid-area: con;
+ 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "m m m"
     "p p p"
     "s y 2"
     "s y 2";
@@ -17,12 +34,31 @@
   border-radius: 15px;
   padding: 10px;
 }
-
-#menu {
-  max-height: 100px;
-  grid-area: m;
+.class{
   display: grid;
+}
+.menubox{
+  height: 100px;
+  grid-area: men;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  grid-template-areas: 
+  "title menu";
+
+}
+
+#title{
+  grid-area: title;
+  align-items: center;
+}
+#menu {
+  grid-area: menu;
+ display: flex;
+ justify-content: end;
+ align-items: center;
+ height: 100px;
+
 }
 #menu ul {
   list-style: none;
