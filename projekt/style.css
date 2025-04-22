@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-@media screen and (min-width: 1200px){
+
 body{
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@ body{
   grid-template-rows: min-content 1fr;
   grid-template-areas: 
   "men"
-  "con ";
+  "con";
 }
 
 .container {
@@ -25,7 +25,8 @@ body{
   grid-template-areas:
     "p p p p"
     "s s y y"
-    "s s y y";
+    "s s y y"
+    "contact contact contact contact";
   gap: 20px;
  
 }
@@ -92,8 +93,17 @@ body{
 }
 
 img{
-  border-radius: 2
-  %;
+  border-radius: 2%;
 }
 
+.Contact{
+  margin-top: 50px;
+  height: 200px;
+  grid-area: contact;
+  background-color: lightblue;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  list-style: none;
 }
+
