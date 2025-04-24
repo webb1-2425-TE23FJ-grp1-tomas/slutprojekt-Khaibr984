@@ -61,41 +61,39 @@ body{
 }
 
 
-.class {
+.class{
   background-color: white;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 50px 80px;
   grid-template-areas: 
   "img"
   "h2"
   "p";
   
 }
-img{
-  grid-area: img;
-}
+
+
 p{
   grid-area: p;
 }
 h2{
   grid-area: h2;
 }
-#rör{
-  grid-area: rör;
+#ror{
+  grid-area: img;
   border-radius: 20px;
   width: 100%;
   padding: 0px;
 }
 
 #rep{
-  grid-area: rep;
+  grid-area: img;
   border-radius: 20px;
   width: 100%;
   padding: 0px;
 }
 #ins{
-  grid-area: ins;
+  grid-area: img;
   border-radius: 20px;
   width: 100%;
   padding: 0px;
