@@ -10,12 +10,15 @@ body{
 .box{
   width: 1200px;
   display: grid;
-  grid-template-rows: min-content 1fr;
+  grid-template-rows: min-content min-content 1fr;
   grid-template-areas: 
   "men"
+  "ru"
   "con";
 }
-
+.rubrik{
+  grid-area: ru;
+}
 
 .menubox{
   height: 100px;
@@ -62,7 +65,8 @@ body{
 
 
 .class{
-  background-color: white;
+  background-color: lightcyan;
+  height: 450px;
   display: grid;
   grid-template-rows: 1fr 50px 80px;
   grid-template-areas: 
@@ -72,6 +76,14 @@ body{
   
 }
 
+.class p{
+  display: none;
+}
+
+.class:hover, .class:hover p{
+  display: block;
+  height: 550px;
+}
 
 p{
   grid-area: p;
@@ -86,15 +98,43 @@ h2{
   padding: 0px;
 }
 
+.card{
+  background-color: lightcyan;
+  position: relative;
+  left: 300px;
+  height: 450px;
+  display: grid;
+  grid-template-rows: 1fr 50px 80px;
+  grid-template-areas: 
+  "img"
+  "h2"
+  "p";
+  
+}
+
+.card p{
+  display: none;
+}
+
+.card:hover, .card:hover p{
+  display: block;
+  height: 550px;
+}
+
+
 #rep{
   grid-area: img;
   border-radius: 20px;
   width: 100%;
   padding: 0px;
+
+  
 }
+
 #ins{
   grid-area: img;
   border-radius: 20px;
   width: 100%;
   padding: 0px;
+
 }

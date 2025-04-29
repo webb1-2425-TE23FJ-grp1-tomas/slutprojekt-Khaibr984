@@ -107,3 +107,47 @@ img{
   list-style: none;
 }
 
+.khalid{
+  position: fixed;
+  border-radius: 0%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);;
+  z-index: 5;
+}
+
+.annoying {
+  display: grid;
+  align-items: end;
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  border: solid thick black;
+  padding: 20px;
+  position: fixed;
+  top: 400px;
+  left: 1050px;
+  z-index: 6;
+}
+
+.annoying p{
+  height: 400px;
+}
+
+.Button {
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  bottom: 0px;
+  border: solid thin black;
+}
+
+.Button:hover {
+  background-color: gray;
+  color: white;
+  transition: 0.3s;
+}
