@@ -58,13 +58,13 @@ body{
   grid-area: con;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   gap: 20px;
  
 }
 
 
 .class{
+  box-shadow: 10px 10px rgb(210, 252, 252);
   background-color: lightcyan;
   height: 450px;
   display: grid;
@@ -83,11 +83,14 @@ body{
 .class:hover, .class:hover p{
   display: block;
   height: 550px;
+  transition: 1s;
 }
 
 p{
   grid-area: p;
 }
+
+
 h2{
   grid-area: h2;
 }
@@ -99,6 +102,7 @@ h2{
 }
 
 .card{
+  box-shadow: 10px 10px rgb(210, 252, 252);
   background-color: lightcyan;
   position: relative;
   left: 300px;
@@ -119,6 +123,7 @@ h2{
 .card:hover, .card:hover p{
   display: block;
   height: 550px;
+  transition: 1s;
 }
 
 

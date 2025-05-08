@@ -1,34 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  background-color:azure ;
+}
+
+.box{
+  width: 1200px;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas: 
+  "men"
+  "con";
+}
+
 .menubox{
-    display: grid;
-    background-color: gray;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    grid-template-areas: 
-    "title menu";
-  
-  }
-  
-  #title{
-    grid-area: title;
-    align-items: center;
-  }
-  #menu {
-    grid-area: menu;
-   display: flex;
-   justify-content: end;
-   align-items: center;
-   height: 100px;
-  
-  }
-  #menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 10px 0 0;
-    display: flex;
-    gap: 20px;
-  }
-  #menu a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
+  height: 100px;
+  grid-area: men;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-template-areas: 
+  "title menu";
+
+}
+
+#title{
+  grid-area: title;
+  align-items: center;
+}
+#menu {
+  grid-area: menu;
+ display: flex;
+ justify-content: end;
+ align-items: center;
+}
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 10px 0 0;
+  display: flex;
+  gap: 20px;
+}
+#menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.container{
+display: grid;
+justify-content: center;
+}
+
+#gram{
+grid-area: gram;
+}
+
+.inist{
+  display: flex;
+}
+
+.inist p{
+  display: flex;
+  align-items: center;
+}
+
+.tiktok{
+  display: flex;
+}
+
+.tiktok p{
+  display: flex;
+  align-items: center;
+}
