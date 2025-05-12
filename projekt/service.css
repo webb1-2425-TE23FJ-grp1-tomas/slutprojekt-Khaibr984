@@ -76,11 +76,11 @@ body{
   
 }
 
-.class p{
+.class p, .card p{
   display: none;
 }
 
-.class:hover, .class:hover p{
+.class:hover, .class:hover p, .card:hover, .card:hover p{
   display: block;
   height: 550px;
   transition: 1s;
@@ -114,16 +114,6 @@ h2{
   "h2"
   "p";
   
-}
-
-.card p{
-  display: none;
-}
-
-.card:hover, .card:hover p{
-  display: block;
-  height: 550px;
-  transition: 1s;
 }
 
 
