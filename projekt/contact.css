@@ -53,26 +53,36 @@ body{
 .container{
 display: grid;
 justify-content: center;
-}
+background-color: rgb(145, 160, 160);
 
-#gram{
-grid-area: gram;
+grid-template-rows: 1fr 1fr;
+grid-template-areas: 
+    "h h h"
+"inist tiktok face";
+
+}
+h2{
+  grid-area: h;
+ text-align: center;
 }
 
 .inist{
-  display: flex;
-}
-
-.inist p{
-  display: flex;
-  align-items: center;
+padding: 10px;
+  grid-area: inist;
 }
 
 .tiktok{
-  display: flex;
+padding: 10px;
+  grid-area: tiktok;
 }
 
-.tiktok p{
+.face{
+padding: 10px;
+  grid-area: face;
+}
+
+.inist p, .tiktok p,.face p{
   display: flex;
   align-items: center;
 }
+
