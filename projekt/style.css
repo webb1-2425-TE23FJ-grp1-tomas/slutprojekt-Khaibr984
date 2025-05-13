@@ -107,6 +107,18 @@ img{
   list-style: none;
 }
 
+.Contact ul{
+    list-style: none;
+  padding: 0;
+  margin: 0 10px 0 0;
+  display: flex;
+  gap: 20px;
+}
+.Contact a{
+  color: black;
+  font-weight: bold;
+}
+
 .khalid{
   position: fixed;
   border-radius: 0%;

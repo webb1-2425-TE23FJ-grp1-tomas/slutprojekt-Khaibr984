@@ -5,7 +5,7 @@
 body{
   display: flex;
   justify-content: center;
-  background-color:azure ;
+  background-color:#f0ffff ;
 }
 
 .box{
@@ -53,8 +53,10 @@ body{
 .container{
 display: grid;
 justify-content: center;
-background-color: rgb(145, 160, 160);
 
+background-color: #b3e0e6;
+border-radius: 50px;
+grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr;
 grid-template-areas: 
     "h h h"
@@ -66,23 +68,40 @@ h2{
  text-align: center;
 }
 
-.inist{
+#gram{
 padding: 10px;
-  grid-area: inist;
+grid-area: inist;
 }
 
-.tiktok{
+#tiktok{
 padding: 10px;
-  grid-area: tiktok;
+grid-area: tiktok;
 }
 
-.face{
+#face{
 padding: 10px;
-  grid-area: face;
+grid-area: face;
 }
 
-.inist p, .tiktok p,.face p{
+.icon p{
   display: flex;
   align-items: center;
 }
 
+.icon{
+padding-right: 80px;
+margin-left: 150px;
+margin-bottom: 50px;
+
+}
+
+.maps{
+  display: grid;
+  justify-content: center;
+  grid-template-areas: 
+  "h"
+  "lo";
+}
+#location{
+  grid-area: lo;
+}
