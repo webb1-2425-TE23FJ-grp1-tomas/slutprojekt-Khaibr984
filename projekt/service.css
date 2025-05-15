@@ -57,18 +57,22 @@ body{
 .container {
   grid-area: con;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  grid-template-areas: 
+  "roren inspektion inst"
+  ;
  
 }
 
 
-.class{
+.roren{
   box-shadow: 10px 10px rgb(210, 252, 252);
   background-color: lightcyan;
   height: 450px;
   display: grid;
-  grid-template-rows: 1fr 50px 80px;
+  grid-area: roren;
+  grid-template-rows: 1fr 100px 80px;
   grid-template-areas: 
   "img"
   "h2"
@@ -76,11 +80,40 @@ body{
   
 }
 
-.class p, .card p{
+.inspektion{
+  box-shadow: 10px 10px rgb(210, 252, 252);
+  background-color: lightcyan;
+  height: 450px;
+  display: grid;
+  grid-area: inspektion;
+  grid-template-rows: 1fr 100px 80px;
+  grid-template-areas: 
+  "img"
+  "h2"
+  "p";
+  
+}
+
+.inst{
+  box-shadow: 10px 10px rgb(210, 252, 252);
+  background-color: lightcyan;
+  position: relative;
+  height: 450px;
+  display: grid;
+  grid-area: inst;
+  grid-template-rows: 1fr 100px 80px;
+  grid-template-areas: 
+  "img"
+  "h2"
+  "p";
+  
+}
+
+.inspektion p,.inst p,.roren p{
   display: none;
 }
 
-.class:hover, .class:hover p, .card:hover, .card:hover p{
+.inspektion:hover, .inspektion:hover p, .inst:hover, .inst:hover p, .roren:hover, .roren:hover p{
   display: block;
   height: 550px;
   transition: 1s;
@@ -94,42 +127,45 @@ p{
 h2{
   grid-area: h2;
 }
-#ror{
+
+
+
+#ror, #ins, #rep{
   grid-area: img;
   border-radius: 20px;
   width: 100%;
+  height: auto;
   padding: 0px;
+  object-fit: cover;
 }
 
-.card{
-  box-shadow: 10px 10px rgb(210, 252, 252);
-  background-color: lightcyan;
-  position: relative;
-  left: 300px;
-  height: 450px;
-  display: grid;
-  grid-template-rows: 1fr 50px 80px;
-  grid-template-areas: 
-  "img"
-  "h2"
-  "p";
+@media screen and (min-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "roren inspektion inst";
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content;
+    grid-template-areas: 
+    "roren inspektion"
+    "inst inst";
+  }
+
   
 }
 
-
-#rep{
-  grid-area: img;
-  border-radius: 20px;
-  width: 100%;
-  padding: 0px;
-
-  
-}
-
-#ins{
-  grid-area: img;
-  border-radius: 20px;
-  width: 100%;
-  padding: 0px;
+@media screen and (max-width: 400px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "roren"
+    "inspektion"
+    "inst";
+  }
 
 }

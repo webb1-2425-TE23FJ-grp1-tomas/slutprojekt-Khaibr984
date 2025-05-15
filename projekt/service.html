@@ -5,47 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plumbing Service</title>
     <link rel="stylesheet" href="service.css" />
+    <link rel="stylesheet" href="simple-lightbox.min.css" />
   </head>
   <body>
     <div class="box">
-    <div class="menubox">
-      <div id="title"> 
-        <img src="img/logo1-removebg-preview.png" >
+      <div class="menubox">
+        <div id="title">
+          <img src="img/logo1-removebg-preview.png" />
+        </div>
+        <div id="menu">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="contac.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    <div id="menu">
-      <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="service.html">Services</a></li>
-        <li><a href="contac.html">Contact</a></li>
-      </ul>
-      </nav>
-    </div>
-  </div>
-  
-     <div class="rubrik">
-    <h1>Services</h1>
-  </div>
 
-    <div class="container">
+      <div class="rubrik">
+        <h1>Services</h1>
+      </div>
 
-    <div class="class"> <img id="ins" src="img/roren1.webp"> 
-  <h2>Installation</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nostrum suscipit nesciunt illo, qui iure velit facilis atque veritatis, recusandae quibusdam expedita, nisi dicta! Labore officiis repellat laboriosam excepturi quisquam?</p>
-    </div>
-    <div class="class"> <img id="ror" src="img/rör (2).webp"> 
-      <h2>Rörinspektion</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium molestiae a veniam, mollitia officia ipsam voluptatem provident nemo cupiditate repellendus optio deleniti voluptate dignissimos impedit ab sit autem minima porro. </p>
-    </div>
-    <div class="card"> <img id="rep" src="img/inst.webp"> 
-      <h2>Reparation</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id hic, sapiente et natus eaque fuga aperiam iusto nostrum reprehenderit impedit magni ab ad, provident rem alias ullam blanditiis cupiditate autem. </p>
-    </div>
+      <div class="container">
+        
+          <div class="roren">
+            <a href="img/roren1 (1).webp"
+              ><img id="ins" src="img/roren1.webp" alt="" title=""
+            /></a>
+            <h2>Installation</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              nostrum suscipit nesciunt illo, qui iure velit facilis atque
+              veritatis, recusandae quibusdam expedita, nisi dicta! Labore
+              officiis repellat laboriosam excepturi quisquam?
+            </p>
+          </div>
+          <div class="inspektion">
+            <a href="img/rör (2) (1).webp"
+              ><img id="ror" src="img/rör (2).webp" alt="" title=""
+            /></a>
+            <h2>Rörinspektion</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium molestiae a veniam, mollitia officia ipsam voluptatem
+              provident nemo cupiditate repellendus optio deleniti voluptate
+              dignissimos impedit ab sit autem minima porro.
+            </p>
+          </div>
+          <div class="inst">
+            <a href="img/inst (1).webp"
+              ><img id="rep" src="img/inst.webp" alt="" title=""
+            /></a>
+            <h2>Reparation</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id hic,
+              sapiente et natus eaque fuga aperiam iusto nostrum reprehenderit
+              impedit magni ab ad, provident rem alias ullam blanditiis
+              cupiditate autem.
+            </p>
+          </div>
+        </div>
+      </div>
 
-
-  </div>
-  </div>
-
- </div>
-  </div>
-
+    <script src="simple-lightbox.min.js"></script>
+    <script>
+      let lightbox = new SimpleLightbox(".container a", {
+        /* options */
+      });
+    </script>
+  </body>
+</html>
