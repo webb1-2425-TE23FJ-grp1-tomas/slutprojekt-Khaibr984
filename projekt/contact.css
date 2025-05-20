@@ -2,41 +2,39 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
   justify-content: center;
-  background-color:#f0ffff ;
+  background-color: #f0ffff;
 }
 
-.box{
+.box {
   width: 1200px;
   display: grid;
   grid-template-rows: min-content 1fr;
-  grid-template-areas: 
-  "men"
-  "con";
+  grid-template-areas:
+    "men"
+    "con";
 }
 
-.menubox{
+.menubox {
   height: 100px;
   grid-area: men;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-template-areas: 
-  "title menu";
-
+  grid-template-areas: "title menu";
 }
 
-#title{
+#title {
   grid-area: title;
   align-items: center;
 }
 #menu {
   grid-area: menu;
- display: flex;
- justify-content: end;
- align-items: center;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 #menu ul {
   list-style: none;
@@ -50,58 +48,92 @@ body{
   color: black;
   font-weight: bold;
 }
-.container{
-display: grid;
-justify-content: center;
-
-background-color: #b3e0e6;
-border-radius: 50px;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-grid-template-areas: 
+.container {
+  display: grid;
+  justify-content: center;
+  background-color: #b3e0e6;
+  border-radius: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
     "h h h"
-"inist tiktok face";
-
+    "inist tiktok face"
+    "lo lo lo";
 }
-h2{
+h2 {
   grid-area: h;
- text-align: center;
+  text-align: center;
 }
 
-#gram{
-padding: 10px;
-grid-area: inist;
+#gram {
+  padding: 10px;
+  grid-area: inist;
 }
 
-#tiktok{
-padding: 10px;
-grid-area: tiktok;
+#tiktok {
+  padding: 10px;
+  grid-area: tiktok;
 }
 
-#face{
-padding: 10px;
-grid-area: face;
+#face {
+  padding: 10px;
+  grid-area: face;
 }
 
-.icon p{
+.icon p {
   display: flex;
   align-items: center;
 }
 
-.icon{
-padding-right: 80px;
-margin-left: 150px;
-margin-bottom: 50px;
-
+.icon {
+  padding-right: 80px;
+  margin-left: 150px;
+  margin-bottom: 50px;
 }
 
-.maps{
+.maps {
   display: grid;
   justify-content: center;
-  grid-template-areas: 
-  "h"
-  "lo";
+  grid-template-areas:
+    "h"
+    "lo";
 }
-#location{
+#location {
   grid-area: lo;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "h h h"
+      "inist tiktok face";
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "inist tiktok"
+      "face face"
+      "lo lo";
+  }
+
+  }
+
+
+@media screen and (max-width: 400px) {
+
+  .container {
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "inist"
+      "tiktok"
+      "face"
+      "lo";
+  }
 }
