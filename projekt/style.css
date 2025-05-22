@@ -103,10 +103,11 @@ img{
 .Contact{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 
-  "ul"
-  "p"
-  "edit";
+ grid-template-rows: 1fr 1fr;
+ grid-template-areas: 
+ "ul"
+
+ "edit";
   margin-top: 20px;
   height: 200px;
   grid-area: contact;
@@ -117,12 +118,13 @@ img{
   list-style: none;
 }
 .edit{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   grid-area: edit;
 }
 
-.Contact p{
-  grid-area: cp;
-}
+
 
 .Contact ul{
   grid-area: ul;
@@ -159,8 +161,8 @@ img{
   border: solid thick black;
   padding: 20px;
   position: fixed;
-  top: 400px;
-  left: 1050px;
+  top: 50%;
+  left: 50%;
   z-index: 6;
 }
 

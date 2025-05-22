@@ -145,6 +145,20 @@ h2{
     grid-template-areas: 
     "roren inspektion inst";
   }
+  .inst{
+  box-shadow: 10px 10px rgb(210, 252, 252);
+  background-color: lightcyan;
+  position: relative;
+  height: 450px;
+  display: grid;
+  grid-area: inst;
+  grid-template-rows: 1fr 100px 80px;
+  grid-template-areas: 
+  "img"
+  "h2"
+  "p";
+  
+}
 }
 
 @media screen and (max-width: 800px) {
@@ -155,7 +169,21 @@ h2{
     "roren inspektion"
     "inst inst";
   }
-
+  
+.inst{
+  box-shadow: 10px 10px rgb(210, 252, 252);
+  background-color: lightcyan;
+  position: relative;
+  height: 450px;
+  display: grid;
+  grid-area: inst;
+  grid-template-rows: 1fr 100px 80px;
+  grid-template-areas: 
+  "img"
+  "h2"
+  "p";
+  
+}
   
 }
 
@@ -167,5 +195,18 @@ h2{
     "inspektion"
     "inst";
   }
-
+.inst{
+  box-shadow: 10px 10px rgb(210, 252, 252);
+  background-color: lightcyan;
+  position: relative;
+  height: 450px;
+  display: grid;
+  grid-area: inst;
+  grid-template-rows: 1fr 100px 80px;
+  grid-template-areas: 
+  "img"
+  "h2"
+  "p";
+  
+}
 }

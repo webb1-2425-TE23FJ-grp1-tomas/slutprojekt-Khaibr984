@@ -9,6 +9,7 @@ body {
 }
 
 .box {
+  width: 100%;
   width: 1200px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -92,6 +93,7 @@ h2 {
   margin-left: 150px;
   margin-bottom: 50px;
   padding-top: 0px;
+  justify-items: center;
 }
 
 .maps {
@@ -105,17 +107,59 @@ h2 {
   grid-area: lo;
 }
 
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 100%;
 
-
-@media screen and (max-width: 400px) {
+  }
 
   .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas:
+    "h h h"
+    "inist tiktok face"
+    ;
+  }
+}
 
-    grid-template-columns: 1fr;
+
+@media screen and (max-width: 1000px) {
+  .box {
+    width: 100%; 
+ 
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr; 
     grid-template-areas:
+      "h h"
+      "inist tiktok"
+      "face face";
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    width: 100%;
+  }
+
+  .container {
+    grid-template-columns: 1fr; 
+    align-content: center;
+    justify-items: center;
+    grid-template-areas:
+      "h"
       "inist"
       "tiktok"
-      "face"
-      ;
+      "face";
+    
   }
+  .icon {
+  padding-right: 80px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  padding-top: 0px;
+  justify-items: center;
+}
 }
