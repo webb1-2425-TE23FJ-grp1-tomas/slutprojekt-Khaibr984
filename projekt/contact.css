@@ -3,6 +3,7 @@
 }
 
 body {
+  font-size: 16px;
   display: flex;
   justify-content: center;
   background-color: #f0ffff;
@@ -18,6 +19,34 @@ body {
     "con"
     "lo";
 }
+
+.text-size-box {
+  position: fixed;
+  bottom: 20px; /* avstånd från botten */
+  right: 20px;  /* avstånd från höger */
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+.text-size-box button {
+  font-size: 24px;
+  padding: 5px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.text-size-box button:hover {
+  background-color: #ddd;
+}
+
 
 .menubox {
   height: 100px;

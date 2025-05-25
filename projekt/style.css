@@ -3,6 +3,7 @@
 }
 
 body{
+  font-size: 16px;
   display: flex;
   justify-content: center;
   background-color:azure ;
@@ -17,11 +18,39 @@ body{
   "con";
 }
 
+.text-size-box {
+  position: fixed;
+  bottom: 20px; /* avstånd från botten */
+  right: 20px;  /* avstånd från höger */
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+.text-size-box button {
+  font-size: 24px;
+  padding: 5px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.text-size-box button:hover {
+  background-color: #ddd;
+}
+
+
 .container {
   grid-area: con;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 100px 100px min-content;
   grid-template-areas:
     "p p p p"
     "s s y y"
@@ -163,6 +192,7 @@ img{
   position: fixed;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 6;
 }
 
@@ -213,12 +243,12 @@ img{
 
 @media (max-width: 400px) {
   .container {
-    grid-template-columns: max-content min-content min-content min-content;
+    grid-template-rows: max-content min-content min-content min-content;
     grid-template-areas:
       "p"
       "s"
       "y"
       "contact";
   }
-
+  
 }
